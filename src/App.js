@@ -17,6 +17,7 @@ import LoginPage from "./pages/auth/LoginPage";
 import LogoutComponent from "./components/authentication/LogoutComponent";
 import CreateCoursePage from "./pages/course/CreateCoursePage";
 import CourseDetailPage from "./pages/course/CourseDetailPage";
+import UpdateCoursePage from "./pages/course/UpdateCoursePage";
 import ProfileUpdatePage from "./pages/profile/ProfileUpdatePage";
 import AuthRouteTrainer from "./components/authentication/AuthRouteTrainer";
 import NewsPage from "./pages/news/News";
@@ -41,6 +42,7 @@ class App extends Component {
                             <Route path="/logout" exact component={LogoutComponent} />
                             <Route exact path="/course" component={CoursePage}/>
                             <Route exact path="/course/detail/:id" component={CourseDetailPage}/>
+                            <Route exact path="/course/update/:id" component={UpdateCoursePage}/>
                             <AuthRouteTrainer exact path="/course/create" component={CreateCoursePage}/>
                             <AuthenticatedRoute exact path="/profile" component={ProfilePage}/>
                             <Route exact path="/profile/detail/:id" component={ProfileDetail}/>
