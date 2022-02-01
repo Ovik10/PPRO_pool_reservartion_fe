@@ -13,9 +13,8 @@ const Styles = styled.div`
     top: 0px;
     width: 100%;
     z-index: 1;
+    height: 7%;
 
-    
-    
   }
   a:hover {
       color: black;

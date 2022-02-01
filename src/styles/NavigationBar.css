@@ -1,0 +1,77 @@
+.main_navbar  {
+    background-color: #222;
+    
+}
+a .main_navbar-brand .main_navbar-nav .main_nav-link {
+    color: #bbb;
+    
+}
+a:hover {
+     color: black;
+ }
+
+.sidebar {
+    
+    padding: 10px;
+    width: 250px;
+    background-image: url(pool_side.png);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    height: 1500px;
+    overflow: auto;
+    float: right;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    
+    
+}
+
+
+.sidebar a {
+    display: block;
+    color: black;
+    margin-top: 5px;
+    padding: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: rgb(69, 178, 224);
+    opacity: 0.8;
+}
+
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1500px;
+}
+
+    
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: right;padding: 6px;}
+
+    div.content {margin-right: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        padding: 0px;
+        float: none;
+    }
+}
