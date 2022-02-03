@@ -18,7 +18,7 @@ class CreateTicketPage extends Component {
             accounts: [],
             beginDate: [],
             endDate: [],
-            ticketType: [],
+            ticketTypes: [],
 
         };
     }
@@ -110,7 +110,7 @@ class CreateTicketPage extends Component {
                 <Form.Group>
                     <Form.Label>Výběr druhu</Form.Label>
                     <Form.Control name="ticketTypeId" as="select" onChange={this.handleChange} required>
-                        {this.state.ticketType.map((ticketType, index) => {
+                        {this.state.ticketTypes.map((ticketType, index) => {
                             return (
                                 <option key={index} value={ticketType.id}>{ticketType.name}</option>
                             )
